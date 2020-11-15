@@ -2,7 +2,7 @@ def square_array(array)
   my_squares = []    #makes a blank array, that we'll fill in later
       array.each do |numb|  #.each pulls elements from the array (in the is case numbers/integers) and we call each of those a 'numb'
         a_square = numb ** 2  #now, we square our "numb"s, and each one becomes (a_square)
-        my_squares << a_square  #each new a_square, we SHOVEL into the blank array we created at the top
+        my_squares.push(a_square)  #each new a_square, we SHOVEL into the blank array we created at the top
       end
   my_squares  #lastbutnotleast - once all the new a_squares have been entered, we return our new array of perfect squares
 end
@@ -15,3 +15,5 @@ end
 
 # the other important aspect was actually SHOVELING new elements into my array. 
 #Again, the answers are very simple. Look over all your notes when you get stuck and find the simplest way to solve. 
+
+# ?? what can we do instead of shovel? my_squares.push(a_square) OR my_squares >> a_square  ...BOTH WORK
